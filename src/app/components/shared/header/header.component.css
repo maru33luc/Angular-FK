@@ -12,8 +12,6 @@ header {
     min-width: 180px;
 }
 
-
-
 .navbar__menu-toogle{
     display: flex;
     flex-direction: column;

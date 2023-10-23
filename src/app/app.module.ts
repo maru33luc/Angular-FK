@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { CollectionComponent } from './components/collection/collection.component';
+import { SliderGlideComponent } from './components/slider-glide/slider-glide.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { HeroComponent } from './components/hero/hero.component';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
-    HeroComponent
+    HeroComponent,
+    CollectionComponent,
+    SliderGlideComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
