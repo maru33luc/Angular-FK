@@ -54,6 +54,12 @@ header {
     transition: color 0.2s ease-in-out;
 }
 
+.navbar__link:hover,
+.submenu__link:hover,
+footer a:hover {
+    color: var(--primary-solid);
+}
+
 .submenu__item {
     display: block;
     padding: 12px 8px;
@@ -76,6 +82,7 @@ header {
 .menu-icon:hover{
     color: var(--primary-solid);
     cursor: pointer;
+    
 }
 
 .navbar__cart:hover svg path {
