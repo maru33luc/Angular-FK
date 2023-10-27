@@ -131,7 +131,7 @@
         {
             "name": "Gandalf the Gray",
             "frontImage": "https://th.bing.com/th/id/OIP.T8MhB7ifnUIlm3Ti63hlYAHaJ8?pid=ImgDet&rs=1",
-            "backImage": "https://th.bing.com/th/id/OIP.7Z3Z3Z2Z2Z2Z2Z2Z2Z2Z2AHaHa?pid=ImgDet&rs=1",
+            "backImage": "https://th.bing.com/th/id/OIP.Etu0RsBNL98GSqfBB-5pBAHaHR?pid=ImgDet&rs=1",
             "series": ["Funko Mystery Minis", "Mystery Minis Lord of the Rings"],
             "price": 12000,
             "id": 17
@@ -139,7 +139,7 @@
         {
             "name": "Samwise",
             "frontImage": "https://th.bing.com/th/id/OIP.gD5ez8aCMrrqNHb05xgY-AHaHa?pid=ImgDet&rs=1",
-            "backImage": "https://th.bing.com/th/id/OIP.7Z3Z3Z2Z2Z2Z2Z2Z2Z2Z2AHaHa?pid=ImgDet&rs=1",
+            "backImage":"https://th.bing.com/th/id/OIP.Etu0RsBNL98GSqfBB-5pBAHaHR?pid=ImgDet&rs=1",
             "series": ["Funko Mystery Minis", "Mystery Minis Lord of the Rings"],
             "price": 12000,
             "id": 18

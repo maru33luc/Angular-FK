@@ -30,6 +30,12 @@
     margin: 30px;
 }
 
+.card-item__img--front, .card-item__img--back{
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 530px) {
     .cards {
         justify-content: flex-start;
