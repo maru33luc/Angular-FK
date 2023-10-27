@@ -6,9 +6,9 @@
             <picture class="card-item__cover">
               <span class="card-item__tag">NUEVO</span>
               <img class="card-item__img--front" [src]="item.frontImage"
-                   alt="Figura coleccionable Funko de un Stormtrooper">
+                   alt="Figura coleccionable Funko ">
               <img class="card-item__img--back" [src]="item.backImage"
-                   alt="Figura coleccionable Funko de un Stormtrooper en caja">
+                   alt="Figura coleccionable Funko ">
             </picture>
   
             <div class="card-item__content">
@@ -24,12 +24,17 @@
   </div>
   <div class="pagination">
     <ul class="pag__ul">
-      <li id="previous-page"><a href="#" (click)="changePage(currentPage - 1)">«</a></li>
+      <li id="previous-page" [class.disabled]="currentPage === 0">
+        <a href="#" (click)="changePage(currentPage - 1)">«</a>
+      </li>
       <li class="page-link" *ngFor="let _ of pages; let i = index">
         <a href="#" [class.active]="i === currentPage" (click)="changePage(i)">{{ i + 1 }}</a>
       </li>
-      <li id="next-page"><a href="#" (click)="changePage(currentPage + 1)">»</a></li>
+      <li id="next-page" [class.disabled]="currentPage === pages.length - 1">
+        <a href="#" (click)="changePage(currentPage + 1)">»</a>
+      </li>
     </ul>
   </div>
+  
   
   
