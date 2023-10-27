@@ -1,133 +1,30 @@
+<section class="slider container">
+  <h2 class="slider__title">ULTIMOS LANZAMIENTOS</h2>
 
-<section class="slider container glide">
-    <h2 class="slider__title">ULTIMOS LANZAMIENTOS</h2>
-    <div class="glide__track" data-glide-el="track">
-        <ul class="slider__items glide__slides" >
-            <li class="slider__item glide__slide" *ngFor="let item of lista" >
-                <article class="card-item">
-                    <a class="card-item__link" >
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" [src]="item.frontImage"
-                                alt="Figura coleccionable Funko de ">
-                            <img class="card-item__img--back" [src]="item.frontImage"
-                                alt="Figura coleccionable Funko de  en caja">
-                        </picture>
+  <ul class="slider__items">
+    <li class="slider__item g" *ngFor="let item of pagedItems">
+      <article class="card-item">
+        <a class="card-item__link">
+          <picture class="card-item__cover">
+            <span class="card-item__tag">NUEVO</span>
+            <img class="card-item__img--front" [src]="item.frontImage" alt="Figura coleccionable Funko de">
+            <img class="card-item__img--back" [src]="item.backImage" alt="Figura coleccionable Funko de en caja">
+          </picture>
 
-                        <div class="card-item__content">
-                            <p class="card-item__licence">{{item.name}}</p>
-                            <h4 class="card-item__name">{{item.series}}</h4>
-                            <p class="card-item__price">$ {{item.price}}</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-             <!-- <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" src="../../../assets/img/pokemon/pidgeotto-1.webp"
-                                alt="Figura coleccionable Funko de Pidgeotto">
-                            <img class="card-item__img--back" src="../../../assets/img/pokemon/pidgeotto-box.webp"
-                                alt="Figura coleccionable Funko de Pidgeotto en caja">
-                        </picture>
-
-                        <div class="card-item__content">
-                            <p class="card-item__licence">POKEMON</p>
-                            <h4 class="card-item__name">PIDGEOTTO</h4>
-                            <p class="card-item__price">$ 1799,99</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" src="../../../assets/img/harry-potter/luna-1.webp"
-                                alt="Figura coleccionable Funko de Luna Lovegood">
-                            <img class="card-item__img--back" src="../../../assets/img/harry-potter/luna-box.webp"
-                                alt="Figura coleccionable Funko de Luna Lovegood en caja">
-                        </picture>
-
-                        <div class="card-item__content">
-                            <p class="card-item__licence">HARRY POTTER</p>
-                            <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                            <p class="card-item__price">$ 1799,99</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" src="../../../assets/img/star-wars/trooper-1.webp"
-                                alt="Figura coleccionable Funko de un Stormtrooper">
-                            <img class="card-item__img--back" src="../../../assets/img/star-wars/trooper-box.webp"
-                                alt="Figura coleccionable Funko de un Stormtrooper en caja">
-                        </picture>
-
-                        <div class="card-item__content">
-                            <p class="card-item__licence">STAR WARS</p>
-                            <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                            <p class="card-item__price">$ 1799,99</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" src="../../../assets/img/pokemon/pidgeotto-1.webp"
-                                alt="Figura coleccionable Funko de Pidgeotto">
-                            <img class="card-item__img--back" src="../../../assets/img/pokemon/pidgeotto-box.webp"
-                                alt="Figura coleccionable Funko de Pidgeotto en caja">
-                        </picture>
-
-                        <div class="card-item__content">
-                            <p class="card-item__licence">POKEMON</p>
-                            <h4 class="card-item__name">PIDGEOTTO</h4>
-                            <p class="card-item__price">$ 1799,99</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item glide__slide">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <span class="card-item__tag">NUEVO</span>
-                            <img class="card-item__img--front" src="../../../assets/img/harry-potter/luna-1.webp"
-                                alt="Figura coleccionable Funko de Luna Lovegood">
-                            <img class="card-item__img--back" src="../../../assets/img/harry-potter/luna-box.webp"
-                                alt="Figura coleccionable Funko de Luna Lovegood en caja">
-                        </picture>
-
-                        <div class="card-item__content">
-                            <p class="card-item__licence">HARRY POTTER</p>
-                            <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                            <p class="card-item__price">$ 1799,99</p>
-                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-            </li>  -->
-        </ul>
+          <div class="card-item__content">
+            <p class="card-item__licence">{{item.name}}</p>
+            <h4 class="card-item__name">{{item.series}}</h4>
+            <p class="card-item__price">$ {{item.price}}</p>
+            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+          </div>
+        </a>
+      </article>
+    </li>
+    
+  </ul><div class="slider__nav">
+      <button class="slider__prev" (click)="changePage(currentPage - 1)">Anterior</button>
+      <button class="slider__next" (click)="changePage(currentPage + 1)">Siguiente</button>
     </div>
-    <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" type="button" data-glide-dir="<" title="Previous"><img class="arrows" src="../../../assets/img/icons/icon-chevron-left.png" alt=""></button>
-        <button class="glide__arrow glide__arrow--right" type="button" data-glide-dir=">" title="Next"><img class="arrows" src="../../../assets/img/icons/icon-chevron-right.png" alt=""></button>
-      </div>
 
+ 
 </section>

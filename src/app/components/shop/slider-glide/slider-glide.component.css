@@ -1,5 +1,5 @@
 .slider {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     gap: 36px;
     margin: 10px auto 50px auto; 
@@ -17,19 +17,62 @@
     text-wrap: balance;
 }
 
-.arrows{
-    color: #000;
-    font-size: 1.5em;
-    font-weight: 700;
+.slider__items {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    /* overflow: hidden; */
 }
 
-.glide__arrow--left {
-    left: -13px;
-} 
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
 
-.glide__arrow--right {
-    right: -1px;
-}
+  .card-item__img--front, .card-item__img--back {
+    height: 270px; 
+    object-fit: contain;
+    border-radius: 10px;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+
+  /* Estilos para los botones de flecha */
+.slider__nav {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .slider__prev,
+  .slider__next {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el botón "Anterior" */
+  .slider__prev {
+    background-color: #555;
+  }
+  
+  /* Estilo para el botón "Siguiente" */
+  .slider__next {
+    background-color: #1D84B5;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  
+
+
 
 @media screen and (max-width: 711px) {
     .glide__arrow--right {

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxGlideModule } from 'ngx-glide';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,7 +32,7 @@ import { ShopMainComponent } from './components/shop/shop-main/shop-main.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
