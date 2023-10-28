@@ -17,6 +17,9 @@ export class SliderGlideComponent implements OnInit {
 
   ngOnInit() {
     this.mostrarFunkos();
+    window.addEventListener('resize', () => {
+      this.updateItemsPerPage();
+    });
   }
 
   async mostrarFunkos() {
@@ -47,7 +50,26 @@ export class SliderGlideComponent implements OnInit {
     } else {
       this.currentPage = newPage;
     }
-    // Prevent the default behavior of the anchor tags
     return false;
   }
+
+  updateItemsPerPage() {
+    if (window.innerWidth <= 1050 && window.innerWidth > 800) {
+      this.itemsPerPage = 3;
+    }else if (window.innerWidth <= 800 && window.innerWidth > 600) {
+      this.itemsPerPage = 2;
+    }
+    else if (window.innerWidth <= 600) {
+      this.itemsPerPage = 1;
+    }
+     else {
+      this.itemsPerPage = 4;
+    }
+  }
+  
+  
+
+
+
+
 }

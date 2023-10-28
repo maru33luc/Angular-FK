@@ -18,6 +18,9 @@ export class ShopMainComponent implements OnInit {
 
   ngOnInit() {
     this.mostrarFunkos();
+    window.addEventListener('resize', () => {
+      this.updateItemsPerPage();
+    });
   }
 
   async mostrarFunkos() {
@@ -48,8 +51,21 @@ export class ShopMainComponent implements OnInit {
     } else {
       this.currentPage = newPage;
     }
-    // Prevent the default behavior of the anchor tags
     return false;
+  }
+
+  updateItemsPerPage() {
+    if (window.innerWidth <= 1380 && window.innerWidth > 1045) {
+      this.itemsPerPage = 6;
+    }else if (window.innerWidth <= 1045 && window.innerWidth > 600) {
+      this.itemsPerPage = 3;
+    }
+    else if (window.innerWidth <= 600) {
+      this.itemsPerPage = 1;
+    }
+     else {
+      this.itemsPerPage = 9;
+    }
   }
   
 }

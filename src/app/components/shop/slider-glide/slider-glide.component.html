@@ -1,6 +1,5 @@
 <section class="slider container">
   <h2 class="slider__title">ULTIMOS LANZAMIENTOS</h2>
-
   <ul class="slider__items">
     <li class="slider__item g" *ngFor="let item of pagedItems">
       <article class="card-item">
@@ -21,7 +20,8 @@
       </article>
     </li>
     
-  </ul><div class="slider__nav">
+  </ul>
+  <div class="slider__nav">
       <button class="slider__prev" (click)="changePage(currentPage - 1)">Anterior</button>
       <button class="slider__next" (click)="changePage(currentPage + 1)">Siguiente</button>
     </div>
