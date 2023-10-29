@@ -25,10 +25,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-             
-            "node_modules/@glidejs/glide/dist/css/glide.core.css", 
-            "node_modules/@glidejs/glide/dist/css/glide.theme.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
